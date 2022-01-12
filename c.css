@@ -1,0 +1,31 @@
+.d{
+    counter-increment:n;
+    margin-bottom:20px;
+}
+.o{
+
+margin-top:2.5%;
+float:left;
+background:#ff2;
+width: 675px;;
+margin-left:20px;
+position:relative;
+
+}
+p{
+float:left;
+background-color:#f22;
+width:40px;
+height:40px;
+text-align:center;
+}
+p:after{
+    content: counter(n);
+    font-size:25px;
+    color:#fff;
+    text-align:center;
+    display:none;
+}
+p:hover::after{
+    display:block;
+}
